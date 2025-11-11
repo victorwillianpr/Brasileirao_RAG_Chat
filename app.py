@@ -10,7 +10,7 @@ import faiss
 from sentence_transformers import SentenceTransformer
 
 # --- CONFIGURAÇÃO DA API GEMINI ---
-API_KEY = "AIzaSyCG28UmTonPzKXHxIn_SEWgAzUcS2F0Gjw"
+API_KEY = ""
 API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key={API_KEY}"
 
 # --- CARREGAMENTO DOS DADOS ---
@@ -228,4 +228,5 @@ if dataframes:
 
             st.markdown(resposta_final)
             st.session_state.messages.append({"role": "assistant", "content": resposta_final})
+
 
